@@ -1,0 +1,173 @@
+.skill {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-margin-top: 85px;
+}
+
+.skill-title__wrap {
+  display: flex;
+  padding-top: 60px;
+  margin-bottom: 60px;
+}
+
+.skill-title {
+  font-size: 40px;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+}
+
+.skill-menu {
+  display: flex;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.skill-item {
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.skill-bar {
+  width: 150px;
+  height: 8px;
+  background-color: black;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.skill-item.active .skill-bar {
+  background-color: #ea8383;
+}
+
+.skill-content {
+  width: 740px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  max-width: 100%;
+}
+
+.skill-box__wrap {
+  width: 91px;
+  text-align: center;
+}
+
+.skill-box {
+  width: 91px;
+  height: 91px;
+  border: 1px solid #595959;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-img {
+  width: 50px;
+  height: 50px;
+}
+
+.skill-description {
+  padding: 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid rgb(58, 58, 58);
+  font-size: 15px;
+}
+
+.skill-language-html {
+  background-image: url("../img/skill/lanuage/language1.png");
+}
+
+.skill-language-css {
+  background-image: url("../img/skill/lanuage/language2.png");
+}
+
+.skill-language-js {
+  background-image: url("../img/skill/lanuage/language3.png");
+}
+
+.skill-language-ts {
+  background-image: url("../img/skill/lanuage/language4.png");
+}
+
+.skill-frontend-react {
+  background-image: url("../img/skill/frontend/frontend1.png");
+}
+
+.skill-frontend-recoil {
+  width: 21px;
+  background-image: url("../img/skill/frontend/frontend2.png");
+}
+
+.skill-frontend-redux {
+  background-image: url("../img/skill/frontend/frontend3.png");
+}
+
+.skill-frontend-vite {
+  background-image: url("../img/skill/frontend/frontend4.png");
+}
+
+.skill-frontend-query {
+  height: 45px;
+  background-image: url("../img/skill/frontend/frontend5.png");
+}
+
+.skill-database-mysql {
+  height: 49px;
+  background-image: url("../img/skill/database/database1.png");
+}
+
+.skill-database-mongodb {
+  width: 65px;
+  height: 65px;
+  background-image: url("../img/skill/database/database2.png");
+}
+
+.skill-etc-git {
+  background-image: url("../img/skill/etc/etc1.png");
+}
+
+.skill-etc-aws {
+  height: 30px;
+  background-image: url("../img/skill/etc/etc2.png");
+}
+
+.skill-etc-github {
+  height: 49px;
+  background-image: url("../img/skill/etc/etc3.png");
+}
+
+.skill-etc-sourcetree {
+  width: 40px;
+  background-image: url("../img/skill/etc/etc4.png");
+}
+
+.skill-etc-notion {
+  height: 52px;
+  background-image: url("../img/skill/etc/etc5.png");
+}
+
+.skill-design-figma {
+  background-image: url("../img/skill/design/design1.png");
+}
+
+.skill-design-photoshop {
+  background-image: url("../img/skill/design/design2.png");
+}
+
+.skill-design-illustrator {
+  background-image: url("../img/skill/design/design3.png");
+}
+
+@media (min-width: 1600px) {
+  .skill-title__wrap {
+    margin-bottom: 100px;
+    padding-top: 100px;
+  }
+}

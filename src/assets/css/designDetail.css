@@ -1,0 +1,912 @@
+.design-detail__header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85px;
+  z-index: 10;
+  background-color: white;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.design-detail__container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.design-detail__logo {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.design-detail__back {
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid black;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-flex;
+  color: black;
+  gap: 5px;
+  padding: 0 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.design-detail__back img {
+  width: 13px;
+  height: 9px;
+  color: black;
+}
+
+.design-detail__back::before {
+  content: "";
+  width: 13px;
+  height: 9px;
+  background-size: cover;
+  background-image: url("../img/designDetail/back-btn.png");
+}
+
+.design-detail {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.design-detail__top-wrap {
+  margin-bottom: 100px;
+}
+
+.design-detail__title {
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.design-detail__wrap {
+  display: flex;
+}
+
+.design-detail__img {
+  width: 630px;
+  height: 420px;
+  margin-right: 50px;
+}
+
+.design-detail__right {
+  width: 500px;
+}
+
+.design-detail__info-wrap {
+  display: flex;
+}
+
+.design-detail__info {
+  display: flex;
+  margin-right: 20px;
+}
+
+.design-detail__t {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.design-detail__info span {
+  color: rgb(48, 48, 48);
+  font-size: 15px;
+}
+
+.design-detail__info.desc {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.design-detail__info.desc .design-detail__t {
+  width: 50px;
+  height: 25px;
+  box-sizing: border-box;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.design-detail__info.desc span {
+  display: block;
+  min-width: 100%;
+  white-space: normal;
+}
+
+.design-detail__mockup-wrap {
+  margin-bottom: 100px;
+}
+
+.design-detail__mockup {
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.design-detail__mockup-con {
+  display: flex;
+  justify-content: space-between;
+}
+
+.design-detail__mockup-con.row {
+  flex-wrap: wrap;
+  gap: 50px;
+  flex-direction: row;
+}
+
+.design-detail__mockup-con.column {
+  flex-direction: column;
+  gap: 30px;
+}
+
+.design-detail__mockup-img {
+  width: 558px;
+  height: 418px;
+}
+
+.design-detail__mockup-img.full {
+  width: 1200px;
+}
+
+.design-detail__hero-wrap {
+  margin-bottom: 100px;
+}
+
+.design-detail__subTitle {
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.design-detail__hero-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.design-detail__hero-list.column {
+  gap: 58px;
+}
+
+.design-detail__hero-list.row {
+  row-gap: 30px;
+  justify-content: space-between;
+}
+
+.design-detail__hero-list.row .design-detail__hero:last-child:nth-child(odd) {
+  margin: 0 auto;
+}
+
+.visual-detail__wonju1 {
+  background-image: url("../img/designDetail/wonju/visual-detail__wonju1.png");
+}
+
+.visual-detail__wonju2 {
+  background-image: url("../img/designDetail/wonju/visual-detail__wonju2.png");
+}
+
+.visual-detail__wonju3 {
+  border: 1px solid #d9d9d9;
+  background-image: url("../img/designDetail/wonju/visual-detail__wonju3.png");
+}
+
+.visual-detail__wonju-hero1 {
+  width: 564px;
+  height: 765px;
+  background-image: url("../img/designDetail/wonju/visual-detail__wonju-hero1.png");
+}
+
+.visual-detail__jazz1 {
+  background-image: url("../img/designDetail/jazz/visual-detail__jazz1.png");
+}
+
+.visual-detail__jazz2 {
+  height: 800px;
+  background-image: url("../img/designDetail/jazz/visual-detail__jazz2.png");
+}
+
+.visual-detail__jazz3 {
+  height: 700px;
+  background-image: url("../img/designDetail/jazz/visual-detail__jazz3.png");
+}
+
+.visual-detail__jazz-hero1 {
+  width: 581px;
+  height: 704px;
+  border: 1px solid #d9d9d9;
+  background-image: url("../img/designDetail/jazz/visual-detail__jazz-hero1.png");
+}
+
+.visual-detail__summer1 {
+  height: 630px;
+  background-image: url("../img/designDetail/summer/visual-detail__summer1.png");
+}
+
+.visual-detail__summer2 {
+  height: 800px;
+  background-image: url("../img/designDetail/summer/visual-detail__summer2.png");
+}
+
+.visual-detail__summer3 {
+  height: 800px;
+  background-image: url("../img/designDetail/summer/visual-detail__summer3.png");
+}
+
+.visual-detail__summer-hero1 {
+  width: 567px;
+  height: 793px;
+  border: 1px solid #d9d9d9;
+  background-image: url("../img/designDetail/summer/visual-detail__summer-hero1.png");
+}
+
+.visual-detail__card1 {
+  background-image: url("../img/designDetail/card/visual-detail__card1.png");
+}
+
+.visual-detail__card2 {
+  background-image: url("../img/designDetail/card/visual-detail__card2.png");
+}
+
+.visual-detail__card3 {
+  background-image: url("../img/designDetail/card/visual-detail__card3.png");
+}
+
+.visual-detail__card4 {
+  background-image: url("../img/designDetail/card/visual-detail__card4.png");
+}
+
+.visual-detail__card5 {
+  background-image: url("../img/designDetail/card/visual-detail__card5.png");
+}
+
+.visual-detail__card-hero1 {
+  width: 571px;
+  height: 326px;
+  background-image: url("../img/designDetail/card/visual-detail__card-hero1.png");
+}
+
+.visual-detail__card-hero2 {
+  width: 571px;
+  height: 326px;
+  background-image: url("../img/designDetail/card/visual-detail__card-hero2.png");
+}
+
+.visual-detail__card-hero3 {
+  width: 400px;
+  height: 698px;
+  background-image: url("../img/designDetail/card/visual-detail__card-hero3.png");
+}
+
+.visual-detail__card-hero4 {
+  width: 400px;
+  height: 698px;
+  background-image: url("../img/designDetail/card/visual-detail__card-hero4.png");
+}
+
+.visual-detail__card-hero5 {
+  width: 571px;
+  height: 326px;
+  background-image: url("../img/designDetail/card/visual-detail__card-hero5.png");
+  margin: 0 auto;
+}
+
+/* indesign */
+.indesign-detail__concert1 {
+  height: 378px;
+  background-image: url("../img/designDetail/concert/indesign-detail__concert1.png");
+}
+
+.indesign-detail__concert2 {
+  height: 700px;
+  background-image: url("../img/designDetail/concert/indesign-detail__concert2.png");
+}
+
+.indesign-detail__concert3 {
+  height: 700px;
+  background-image: url("../img/designDetail/concert/indesign-detail__concert3.png");
+}
+
+.indesign-detail__concert4 {
+  height: 700px;
+  background-image: url("../img/designDetail/concert/indesign-detail__concert4.png");
+}
+
+.indesign-detail__concert5 {
+  height: 700px;
+  background-image: url("../img/designDetail/concert/indesign-detail__concert5.png");
+}
+
+.indesign-detail__concert-hero1 {
+  width: 1200px;
+  height: 509px;
+  background-image: url("../img/designDetail/concert/indesign-detail__concert-hero1.png");
+}
+
+.indesign-detail__concert-hero2 {
+  width: 1200px;
+  height: 550px;
+  background-image: url("../img/designDetail/concert/indesign-detail__concert-hero2.png");
+}
+
+.indesign-detail__promise1 {
+  background-image: url("../img/designDetail/promise/indesign-detail__promise1.png");
+}
+
+.indesign-detail__promise2 {
+  height: 800px;
+  background-image: url("../img/designDetail/promise/indesign-detail__promise2.png");
+}
+
+.indesign-detail__promise3 {
+  height: 800px;
+  background-image: url("../img/designDetail/promise/indesign-detail__promise3.png");
+}
+
+.indesign-detail__promise4 {
+  height: 800px;
+  background-image: url("../img/designDetail/promise/indesign-detail__promise4.png");
+}
+
+.indesign-detail__promise5 {
+  height: 800px;
+  background-image: url("../img/designDetail/promise/indesign-detail__promise5.png");
+}
+
+.indesign-detail__promise-hero1 {
+  width: 1200px;
+  height: 882px;
+  background-image: url("../img/designDetail/promise/indesign-detail__promise-hero1.png");
+}
+
+.indesign-detail__promise-hero2 {
+  width: 1200px;
+  height: 882px;
+  background-image: url("../img/designDetail/promise/indesign-detail__promise-hero2.png");
+}
+
+.indesign-detail__album1 {
+  background-image: url("../img/designDetail/album/indesign-detail__album1.png");
+}
+
+.indesign-detail__album2 {
+  height: 800px;
+  background-image: url("../img/designDetail/album/indesign-detail__album2.png");
+}
+
+.indesign-detail__album3 {
+  height: 800px;
+  background-image: url("../img/designDetail/album/indesign-detail__album3.png");
+}
+
+.indesign-detail__album4 {
+  height: 800px;
+  background-image: url("../img/designDetail/album/indesign-detail__album4.png");
+}
+
+.indesign-detail__album5 {
+  height: 800px;
+  background-image: url("../img/designDetail/album/indesign-detail__album5.png");
+}
+
+.indesign-detail__album-hero1 {
+  width: 1200px;
+  height: 576px;
+  background-image: url("../img/designDetail/album/indesign-detail__album-hero1.png");
+}
+
+.indesign-detail__album-hero2 {
+  width: 1200px;
+  height: 576px;
+  background-image: url("../img/designDetail/album/indesign-detail__album-hero2.png");
+}
+
+.indesign-detail__library1 {
+  background-image: url("../img/designDetail/library/indesign-detail__library1.png");
+}
+
+.indesign-detail__library2 {
+  height: 800px;
+  background-image: url("../img/designDetail/library/indesign-detail__library2.png");
+}
+
+.indesign-detail__library3 {
+  height: 800px;
+  background-image: url("../img/designDetail/library/indesign-detail__library3.png");
+}
+
+.indesign-detail__library-hero1 {
+  width: 1200px;
+  height: 860px;
+  background-image: url("../img/designDetail/library/indesign-detail__library-hero1.png");
+}
+
+.indesign-detail__library-hero2 {
+  width: 1200px;
+  height: 860px;
+  background-image: url("../img/designDetail/library/indesign-detail__library-hero2.png");
+}
+
+.indesign-detail__library-hero3 {
+  width: 1200px;
+  height: 860px;
+  background-image: url("../img/designDetail/library/indesign-detail__library-hero3.png");
+}
+
+.indesign-detail__book1 {
+  height: 372px;
+  background-image: url("../img/designDetail/book/indesign-detail__book1.png");
+}
+
+.indesign-detail__book2 {
+  height: 675px;
+  background-image: url("../img/designDetail/book/indesign-detail__book2.png");
+}
+
+.indesign-detail__book3 {
+  height: 727px;
+  background-image: url("../img/designDetail/book/indesign-detail__book3.png");
+}
+
+.indesign-detail__book4 {
+  height: 800px;
+  background-image: url("../img/designDetail/book/indesign-detail__book4.png");
+}
+
+.indesign-detail__book-hero1 {
+  width: 1200px;
+  height: 943px;
+  background-image: url("../img/designDetail/book/indesign-detail__book-hero1.png");
+}
+
+.indesign-detail__style1 {
+  background-image: url("../img/designDetail/style/indesign-detail__style1.png");
+}
+
+.indesign-detail__style2 {
+  height: 764px;
+  background-image: url("../img/designDetail/style/indesign-detail__style2.png");
+}
+
+.indesign-detail__style3 {
+  height: 764px;
+  background-image: url("../img/designDetail/style/indesign-detail__style3.png");
+}
+
+.indesign-detail__style4 {
+  height: 764px;
+  background-image: url("../img/designDetail/style/indesign-detail__style4.png");
+}
+
+.indesign-detail__style5 {
+  height: 750px;
+  background-image: url("../img/designDetail/style/indesign-detail__style5.png");
+}
+
+.indesign-detail__style6 {
+  height: 824px;
+  background-image: url("../img/designDetail/style/indesign-detail__style6.png");
+}
+
+.indesign-detail__style7 {
+  height: 720px;
+  background-image: url("../img/designDetail/style/indesign-detail__style7.png");
+}
+
+.indesign-detail__style-hero1 {
+  width: 1200px;
+  height: 819px;
+  background-image: url("../img/designDetail/style/indesign-detail__style-hero1.png");
+}
+
+.indesign-detail__wine1 {
+  background-image: url("../img/designDetail/wine/indesign-detail__wine1.png");
+}
+
+.indesign-detail__wine2 {
+  height: 800px;
+  background-image: url("../img/designDetail/wine/indesign-detail__wine2.png");
+}
+
+.indesign-detail__wine3 {
+  height: 800px;
+  background-image: url("../img/designDetail/wine/indesign-detail__wine3.png");
+}
+
+.indesign-detail__wine-hero1 {
+  width: 1200px;
+  height: 848px;
+  background-image: url("../img/designDetail/wine/indesign-detail__wine-hero1.png");
+}
+
+.indesign-detail__wine-hero2 {
+  width: 1200px;
+  height: 848px;
+  background-image: url("../img/designDetail/wine/indesign-detail__wine-hero2.png");
+}
+
+.indesign-detail__wine-hero3 {
+  width: 1200px;
+  height: 848px;
+  background-image: url("../img/designDetail/wine/indesign-detail__wine-hero3.png");
+}
+
+.indesign-detail__food1 {
+  background-image: url("../img/designDetail/food/indesign-detail__food1.png");
+}
+
+.indesign-detail__food2 {
+  height: 800px;
+  background-image: url("../img/designDetail/food/indesign-detail__food2.png");
+}
+
+.indesign-detail__food3 {
+  height: 800px;
+  background-image: url("../img/designDetail/food/indesign-detail__food3.png");
+}
+
+.indesign-detail__food4 {
+  height: 800px;
+  background-image: url("../img/designDetail/food/indesign-detail__food4.png");
+}
+
+.indesign-detail__food-hero1 {
+  width: 1200px;
+  height: 848px;
+  background-image: url("../img/designDetail/food/indesign-detail__food-hero1.png");
+}
+
+.indesign-detail__food-hero2 {
+  width: 1200px;
+  height: 848px;
+  background-image: url("../img/designDetail/food/indesign-detail__food-hero2.png");
+}
+
+.indesign-detail__food-hero3 {
+  width: 1200px;
+  height: 848px;
+  background-image: url("../img/designDetail/food/indesign-detail__food-hero3.png");
+}
+
+.indesign-detail__food-hero4 {
+  width: 1200px;
+  height: 848px;
+  background-image: url("../img/designDetail/food/indesign-detail__food-hero4.png");
+}
+
+.indesign-detail__calendar1 {
+  background-image: url("../img/designDetail/ann/indesign-detail__calendar1.png");
+}
+
+.indesign-detail__calendar2 {
+  height: 800px;
+  background-image: url("../img/designDetail/ann/indesign-detail__calendar2.png");
+}
+
+.indesign-detail__calendar3 {
+  height: 800px;
+  background-image: url("../img/designDetail/ann/indesign-detail__calendar3.png");
+}
+
+.indesign-detail__calendar4 {
+  height: 800px;
+  background-image: url("../img/designDetail/ann/indesign-detail__calendar4.png");
+}
+
+.indesign-detail__calendar-hero1 {
+  width: 1200px;
+  height: 849px;
+  background-image: url("../img/designDetail/ann/indesign-detail__calendar-hero1.png");
+}
+
+.infographic-detail__work1 {
+  background-image: url("../img/designDetail/work/infographic-detail__work1.png");
+}
+
+.infographic-detail__work2 {
+  height: 800px;
+  background-image: url("../img/designDetail/work/infographic-detail__work2.png");
+}
+
+.infographic-detail__work3 {
+  height: 800px;
+  background-image: url("../img/designDetail/work/infographic-detail__work3.png");
+}
+
+.infographic-detail__work4 {
+  height: 800px;
+  background-image: url("../img/designDetail/work/infographic-detail__work4.png");
+}
+
+.infographic-detail__work-hero1 {
+  width: 600px;
+  height: 1080px;
+  background-image: url("../img/designDetail/work/infographic-detail__work-hero1.png");
+}
+
+.infographic-detail__pet1 {
+  background-image: url("../img/designDetail/pet/infographic-detail__pet1.png");
+}
+
+.infographic-detail__pet2 {
+  height: 800px;
+  background-image: url("../img/designDetail/pet/infographic-detail__pet2.png");
+}
+
+.infographic-detail__pet3 {
+  height: 800px;
+  background-image: url("../img/designDetail/pet/infographic-detail__pet3.png");
+}
+
+.infographic-detail__pet4 {
+  height: 800px;
+  background-image: url("../img/designDetail/pet/infographic-detail__pet4.png");
+}
+
+.infographic-detail__pet-hero1 {
+  width: 600px;
+  height: 1288px;
+  background-image: url("../img/designDetail/pet/infographic-detail__pet-hero1.png");
+}
+
+.infographic-detail__fire1 {
+  background-image: url("../img/designDetail/fire/infographic-detail__fire1.png");
+}
+
+.infographic-detail__fire2 {
+  height: 900px;
+  background-image: url("../img/designDetail/fire/infographic-detail__fire2.png");
+}
+
+.infographic-detail__fire-hero1 {
+  width: 1200px;
+  height: 1104px;
+  background-image: url("../img/designDetail/fire/infographic-detail__fire-hero1.png");
+}
+
+.infographic-detail__jeju1 {
+  background-image: url("../img/designDetail/jeju/infographic-detail__jeju1.png");
+}
+
+.infographic-detail__jeju2 {
+  height: 800px;
+  background-image: url("../img/designDetail/jeju/infographic-detail__jeju2.png");
+}
+
+.infographic-detail__jeju3 {
+  height: 800px;
+  background-image: url("../img/designDetail/jeju/infographic-detail__jeju3.png");
+}
+
+.infographic-detail__jeju4 {
+  height: 800px;
+  background-image: url("../img/designDetail/jeju/infographic-detail__jeju4.png");
+}
+
+.infographic-detail__jeju5 {
+  height: 800px;
+  background-image: url("../img/designDetail/jeju/infographic-detail__jeju5.png");
+}
+
+.infographic-detail__jeju6 {
+  height: 800px;
+  background-image: url("../img/designDetail/jeju/infographic-detail__jeju6.png");
+}
+
+.infographic-detail__jeju-hero1 {
+  width: 600px;
+  height: 849px;
+  background-image: url("../img/designDetail/jeju/infographic-detail__jeju-hero1.png");
+}
+
+.infographic-detail__cardnews1 {
+  background-image: url("../img/designDetail/news/infographic-detail__cardnews1.png");
+}
+
+.infographic-detail__cardnews2 {
+  height: 800px;
+  background-image: url("../img/designDetail/news/infographic-detail__cardnews2.png");
+}
+
+.infographic-detail__cardnews3 {
+  height: 800px;
+  background-image: url("../img/designDetail/news/infographic-detail__cardnews3.png");
+}
+
+.infographic-detail__cardnews4 {
+  height: 800px;
+  background-image: url("../img/designDetail/news/infographic-detail__cardnews4.png");
+}
+
+.infographic-detail__cardnews5 {
+  height: 800px;
+  background-image: url("../img/designDetail/news/infographic-detail__cardnews5.png");
+}
+
+.infographic-detail__cardnews6 {
+  height: 800px;
+  background-image: url("../img/designDetail/news/infographic-detail__cardnews6.png");
+}
+
+.infographic-detail__cardnews-hero1 {
+  width: 580px;
+  height: 580px;
+  background-image: url("../img/designDetail/news/infographic-detail__cardnews-hero1.png");
+}
+
+.infographic-detail__cardnews-hero2 {
+  width: 580px;
+  height: 580px;
+  background-image: url("../img/designDetail/news/infographic-detail__cardnews-hero2.png");
+}
+
+.infographic-detail__cardnews-hero3 {
+  width: 580px;
+  height: 580px;
+  background-image: url("../img/designDetail/news/infographic-detail__cardnews-hero3.png");
+}
+
+.infographic-detail__cardnews-hero4 {
+  width: 580px;
+  height: 580px;
+  background-image: url("../img/designDetail/news/infographic-detail__cardnews-hero4.png");
+}
+
+.infographic-detail__cardnews-hero5 {
+  width: 580px;
+  height: 580px;
+  background-image: url("../img/designDetail/news/infographic-detail__cardnews-hero5.png");
+}
+
+.infographic-detail__cardnews-hero6 {
+  width: 580px;
+  height: 580px;
+  background-image: url("../img/designDetail/news/infographic-detail__cardnews-hero6.png");
+}
+
+.infographic-detail__cardnews-hero7 {
+  width: 580px;
+  height: 580px;
+  background-image: url("../img/designDetail/news/infographic-detail__cardnews-hero7.png");
+}
+
+.infographic-detail__cardnews-hero8 {
+  width: 580px;
+  height: 580px;
+  background-image: url("../img/designDetail/news/infographic-detail__cardnews-hero8.png");
+}
+
+.infographic-detail__cardnews-hero9 {
+  width: 580px;
+  height: 580px;
+  background-image: url("../img/designDetail/news/infographic-detail__cardnews-hero9.png");
+}
+
+.infographic-detail__cardnews-hero10 {
+  width: 580px;
+  height: 580px;
+  background-image: url("../img/designDetail/news/infographic-detail__cardnews-hero10.png");
+}
+
+.infographic-detail__cardnews-hero11 {
+  width: 580px;
+  height: 580px;
+  background-image: url("../img/designDetail/news/infographic-detail__cardnews-hero11.png");
+}
+
+.infographic-detail__pictogram1 {
+  background-image: url("../img/designDetail/pictogram/infographic-detail__pictogram1.png");
+}
+
+.infographic-detail__pictogram2 {
+  height: 800px;
+  background-image: url("../img/designDetail/pictogram/infographic-detail__pictogram2.png");
+}
+
+.infographic-detail__pictogram3 {
+  height: 600px;
+  background-image: url("../img/designDetail/pictogram/infographic-detail__pictogram3.png");
+}
+
+.infographic-detail__pictogram-hero1 {
+  width: 580px;
+  height: 580px;
+  background-image: url("../img/designDetail/pictogram/infographic-detail__pictogram-hero1.png");
+}
+
+.infographic-detail__pictogram-hero2 {
+  width: 580px;
+  height: 580px;
+  background-image: url("../img/designDetail/pictogram/infographic-detail__pictogram-hero2.png");
+}
+
+.infographic-detail__pictogram-hero3 {
+  width: 580px;
+  height: 580px;
+  background-image: url("../img/designDetail/pictogram/infographic-detail__pictogram-hero3.png");
+}
+
+.infographic-detail__pictogram-hero4 {
+  width: 580px;
+  height: 580px;
+  background-image: url("../img/designDetail/pictogram/infographic-detail__pictogram-hero4.png");
+}
+
+.infographic-detail__pictogram-hero5 {
+  width: 1200px;
+  height: 680px;
+  background-image: url("../img/designDetail/pictogram/infographic-detail__pictogram-hero5.png");
+}
+
+.infographic-detail__pictogram-hero6 {
+  width: 1200px;
+  height: 680px;
+  background-image: url("../img/designDetail/pictogram/infographic-detail__pictogram-hero6.png");
+}
+
+.infographic-detail__vs1 {
+  background-image: url("../img/designDetail/vs/infographic-detail__vs1.png");
+}
+
+.infographic-detail__vs2 {
+  height: 900px;
+  background-image: url("../img/designDetail/vs/infographic-detail__vs2.png");
+}
+
+.infographic-detail__vs-hero1 {
+  width: 600px;
+  height: 1026px;
+  background-image: url("../img/designDetail/vs/infographic-detail__vs-hero1.png");
+}
+
+.infographic-detail__guide1 {
+  background-image: url("../img/designDetail/guide/infographic-detail__guide1.png");
+}
+
+.infographic-detail__guide2 {
+  height: 900px;
+  background-image: url("../img/designDetail/guide/infographic-detail__guide2.png");
+}
+
+.infographic-detail__guide3 {
+  height: 900px;
+  background-image: url("../img/designDetail/guide/infographic-detail__guide3.png");
+}
+
+.infographic-detail__guide-hero1 {
+  width: 800px;
+  height: 825px;
+  background-image: url("../img/designDetail/guide/infographic-detail__guide-hero1.png");
+}
+
+.infographic-detail__sns1 {
+  background-image: url("../img/designDetail/sns/infographic-detail__sns1.png");
+}
+
+.infographic-detail__sns2 {
+  height: 800px;
+  background-image: url("../img/designDetail/sns/infographic-detail__sns2.png");
+}
+
+.infographic-detail__sns3 {
+  height: 800px;
+  background-image: url("../img/designDetail/sns/infographic-detail__sns3.png");
+}
+
+.infographic-detail__sns-hero1 {
+  width: 800px;
+  height: 565px;
+  background-image: url("../img/designDetail/sns/infographic-detail__sns-hero1.png");
+}

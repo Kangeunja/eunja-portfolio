@@ -1,0 +1,138 @@
+.project {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-margin-top: 85px;
+}
+
+.project-title__wrap {
+  display: flex;
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.project-title {
+  font-size: 40px;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+}
+
+.project-con__wrap {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-left__con {
+  width: 614px;
+  height: 450px;
+  background-image: url("../img/project/project-left-con.png");
+}
+
+.project-text {
+  font-size: 30px;
+  color: #449d3b;
+}
+
+.project-data__wrap {
+  display: flex;
+  align-content: center;
+}
+
+.project-date {
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-right: 25px;
+}
+
+.project-more {
+  height: 26px;
+  padding: 3px;
+  border: none;
+  box-sizing: border-box;
+  border: 1px solid #4a4a4a;
+  background-color: transparent;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: 0.23s ease;
+}
+
+.project-more:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.project-more:hover {
+  color: rgb(229, 229, 229);
+  background-color: #4a4a4a;
+}
+
+.project-info {
+  width: 580px;
+  margin-bottom: 30px;
+}
+
+.project-skill__wrap {
+  width: 580px;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.project-skill {
+  padding: 5px 15px;
+  box-sizing: border-box;
+  border: 1px solid #ebebeb;
+  border-radius: 20.5px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.project-tag__wrap {
+  display: flex;
+  gap: 30px;
+}
+
+.project-tag-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.project-tag-item:hover span {
+  color: rgb(106, 106, 106);
+}
+
+.project-tag {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.project-tag__wrap span {
+  font-size: 15px;
+}
+
+.project-tag.github {
+  background-image: url("../img/project/project-github.png");
+}
+
+.project-tag.web {
+  background-image: url("../img/project/project-web.png");
+}
+
+@media (min-width: 1600px) {
+  .project-title__wrap {
+    margin-bottom: 100px;
+    padding-top: 100px;
+  }
+
+  .project-con__wrap {
+    max-width: 1300px;
+    width: 100%;
+  }
+}

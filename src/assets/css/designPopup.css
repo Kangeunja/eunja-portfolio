@@ -1,0 +1,114 @@
+.designPopup {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.designPopup__inner {
+  width: 60vw;
+  max-width: 750px;
+  /* height: 70vh; */
+  background: #fff;
+  padding: 30px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.designPopup-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.designPopup-info__wrap {
+  display: flex;
+  margin-bottom: 35px;
+  gap: 20px;
+}
+
+.designPopup-info {
+  display: flex;
+  font-size: 13px;
+}
+
+.designPopup-info p:nth-child(1) {
+  display: flex;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.designPopup-info p:nth-child(2) {
+  color: #464646;
+}
+
+.designPopup-info__content {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.designPopup-box {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.artwork-detail__cat1 {
+  width: 690px;
+  height: 552px;
+  background-image: url("../img/designPopup/artwork-detail__cat1.png");
+}
+
+.artwork-detail__girl1 {
+  width: 690px;
+  height: 690px;
+  background-image: url("../img/designPopup/artwork-detail__girl1.png");
+}
+
+.artwork-detail__fish1 {
+  width: 690px;
+  height: 863px;
+  background-image: url("../img/designPopup/artwork-detail__fish1.png");
+}
+
+.artwork-detail__person1 {
+  width: 690px;
+  height: 690px;
+  background-image: url("../img/designPopup/artwork-detail__person1.png");
+}
+
+.artwork-detail__sphere1 {
+  width: 690px;
+  height: 437px;
+  background-image: url("../img/designPopup/artwork-detail__sphere1.png");
+}
+
+.artwork-detail__flower1 {
+  width: 690px;
+  height: 690px;
+  background-image: url("../img/designPopup/artwork-detail__flower1.png");
+}
+
+.designPopup-close {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/designPopup/carbon_close.png");
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+@media (min-width: 1600px) {
+  .designPopup-box {
+    height: 500px;
+  }
+}
