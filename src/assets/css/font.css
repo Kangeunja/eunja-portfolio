@@ -21,3 +21,10 @@
   src: url("../fonts/Mulish/Mulish-Regular.ttf") format("truetype");
   font-style: normal;
 }
+
+@font-face {
+  font-family: "NanumGothic";
+  src: url("../fonts/NanumGothic/NanumGothicCoding-Regular.ttf")
+    format("truetype");
+  font-style: normal;
+}

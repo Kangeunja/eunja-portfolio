@@ -55,7 +55,7 @@ const Projects = ({ projectRef }: any) => {
               <div
                 className="project-tag-item"
                 onClick={() =>
-                  window.open("https://fascinating-muffin-92a8a5.netlify.app/")
+                  window.open("https://readpick-front-portfolio.netlify.app/")
                 }
               >
                 <div className="project-tag web"></div>

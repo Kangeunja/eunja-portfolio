@@ -129,18 +129,18 @@
   background-image: url("../img/skill/database/database2.png");
 }
 
-.skill-etc-git {
+/* .skill-etc-git {
   background-image: url("../img/skill/etc/etc1.png");
-}
-
-.skill-etc-aws {
-  height: 30px;
-  background-image: url("../img/skill/etc/etc2.png");
-}
+} */
 
 .skill-etc-github {
   height: 49px;
   background-image: url("../img/skill/etc/etc3.png");
+}
+
+.skill-etc-render {
+  height: 56px;
+  background-image: url("../img/skill/etc/etc2.png");
 }
 
 .skill-etc-sourcetree {
@@ -151,6 +151,11 @@
 .skill-etc-notion {
   height: 52px;
   background-image: url("../img/skill/etc/etc5.png");
+}
+
+.skill-etc-netlify {
+  height: 50px;
+  background-image: url("../img/skill/etc/etc6.png");
 }
 
 .skill-design-figma {

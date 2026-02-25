@@ -1,7 +1,7 @@
 .main-img {
   min-width: 100vw;
   min-height: 100vh;
-  background-image: url("../img/home/main-img.png");
+  background-image: url("../img/home/main.png");
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -9,16 +9,43 @@
 }
 
 .main-text {
+  width: 700px;
   position: absolute;
-  top: 36%;
-  left: 53%;
+  top: 40%;
+  left: 70%;
   transform: translate(-50%, -50%);
   text-align: left;
-  font-size: 30px;
+  font-size: 34px;
+  color: white;
+  font-weight: 100;
+  font-family: "NanumGothic", sans-serif;
+  text-shadow: 0 4px 4.3px rgba(0, 0, 0, 0.25);
 }
 
 .main-text span {
-  font-weight: bold;
+  font-family: normal;
+}
+
+.final-text {
+  margin-top: 10px;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 4px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
 }
 
 .main-bottom__img {
@@ -74,5 +101,9 @@
 @media (min-width: 1600px) {
   .main-text {
     font-size: 40px;
+  }
+
+  .main-text {
+    width: 850px;
   }
 }
