@@ -123,24 +123,6 @@
   margin-bottom: 5px;
 }
 
-.projectPopup-data1 {
-  width: 654px;
-  height: 450px;
-  background-image: url("../img/projectPopup/projectPopup-data1.png");
-}
-
-.projectPopup-data2 {
-  width: 654px;
-  height: 514px;
-  background-image: url("../img/projectPopup/projectPopup-data2.png");
-}
-
-.projectPopup-data3 {
-  width: 654px;
-  height: 326px;
-  background-image: url("../img/projectPopup/projectPopup-data3.png");
-}
-
 .projectPopup-step__info {
   font-size: 14px;
   margin-bottom: 10px;

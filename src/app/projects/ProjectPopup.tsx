@@ -76,7 +76,7 @@ const ProjectPopup = ({ selectText, onClose }: ProjectPopupProps) => {
               <div className="projectPopup-step__box" key={index}>
                 <div className="projectPopup-step__title">{step.title}</div>
                 <div className="projectPopup-step__info">{step.info}</div>
-                <div className={step.className}></div>
+                <img src={step.src}></img>
               </div>
             ))}
           </div>

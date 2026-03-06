@@ -36,7 +36,7 @@ export const data = {
     {
       title: "제주여자상업고등학교 졸업",
       institution: "디지털콘텐츠과",
-      period: "2017",
+      period: "2018",
     },
   ],
 };
