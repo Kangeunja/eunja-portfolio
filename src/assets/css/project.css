@@ -10,14 +10,37 @@
 
 .project-title__wrap {
   display: flex;
+  flex-direction: column;
   padding-top: 60px;
-  margin-bottom: 40px;
 }
 
 .project-title {
   font-size: 40px;
   text-align: center;
   font-family: "Mulish", sans-serif;
+  margin-bottom: 20px;
+}
+
+.project-tab {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-tab button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #c8c8c8;
+  color: #c8c8c8;
+  background-color: transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.project-tab .active {
+  color: black;
+  border: 1px solid black;
 }
 
 .project-con__wrap {
@@ -25,12 +48,61 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
+}
+
+.project-slider {
+  display: flex;
+  transition: transform 0.5s ease;
 }
 
 .project-left__con {
   width: 614px;
   height: 450px;
-  background-image: url("../img/project/project-left-con.png");
+  position: relative;
+}
+
+.project-left__con img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.project-left__info {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.project-left__screen {
+  position: absolute;
+  top: 80px;
+  left: 109px;
+  width: 400px;
+  height: 230px;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.project-left__screen img {
+  width: 100%;
+  height: auto;
+  transform: translateY(0);
+  transition: transform 3s linear;
+}
+
+.project-left__screen:hover img {
+  transform: translateY(-650px);
+  cursor: pointer;
+}
+
+.project-left__screen::-webkit-scrollbar {
+  display: none;
+}
+
+.project-right__con {
+  padding-top: 50px;
 }
 
 .project-text {
