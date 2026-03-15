@@ -4,8 +4,7 @@ export const data = {
       company: "(주) 비즈위즈시스템",
       role: "프론트엔드 개발자",
       period: "2023.09 ~ 2025.02",
-      notionLink:
-        "https://www.notion.so/30c5b07e9f5380e59f80ee3b807f6ecb?source=copy_link",
+      notionLink: "https://www.notion.so/322eba697ee680d9a851ed247970c204",
       isLatest: true,
     },
     {
