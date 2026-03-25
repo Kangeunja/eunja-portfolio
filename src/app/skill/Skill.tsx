@@ -39,7 +39,7 @@ const Skill = ({ skillsRef }: any) => {
               </div>
               <span>{item.name}</span>
             </div>
-          )
+          ),
         )}
 
         {currentContent.description && (

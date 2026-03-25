@@ -1,6 +1,7 @@
 import ReadPick from "../assets/img/project/project-left-img1.png";
 import jeju from "../assets/img/project/project-left-img2.png";
 import jejuDetail from "../assets/img/project/peoject-jeju-content.png";
+import ann from "../assets/img/project/project-left-ann.png";
 
 export const projectData = [
   {
@@ -22,5 +23,15 @@ export const projectData = [
     subSrc: jejuDetail,
     github: "https://github.com/Kangeunja/Jeju-front",
     web: "https://jeju-portfolio.netlify.app/",
+  },
+
+  {
+    text: "Anne Exhibition",
+    date: "2026-03 ~ 진행중",
+    info: "서울 숲 갤러리아포레에서 열린 <내 이름은 빨강머리 앤>를 모티브로 한 웹 서비스를 구현했습니다. Supabase를 이용한 데이터베이스 구현과 Vercel를 활용해 배포환경을 구축했습니다. 또한 전시의 시각적 요소를 웹 환경에 맞게 재구성하여, 사용자가 언제 어디서든 전시의 여운을 느끼고 정보를 얻을 수 있도록 구현했습니다.",
+    skill: ["React", "scss", "Figma", "Github", "supabase", "vercel"],
+    src: ann,
+    github: "https://github.com/Kangeunja/Ann-project",
+    web: "https://ann-project-three.vercel.app/",
   },
 ];
