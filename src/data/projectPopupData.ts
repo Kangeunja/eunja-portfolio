@@ -4,6 +4,9 @@ import projectPopup3 from "../assets/img/projectPopup/projectPopup-data3.png";
 import projectPopup4 from "../assets/img/projectPopup/projectPopup-data4.png";
 import projectPopup5 from "../assets/img/projectPopup/projectPopup-data5.png";
 import projectPopup6 from "../assets/img/projectPopup/projectPopup-data6.png";
+import projectPopup7 from "../assets/img/projectPopup/projectPopup-data7.png";
+import projectPopup8 from "../assets/img/projectPopup/projectPopup-data8.png";
+import projectPopup9 from "../assets/img/projectPopup/projectPopup-data9.png";
 
 export const projectPopupData = [
   {
@@ -140,5 +143,70 @@ React 훅을 활용한 상태 관리 역량을 강화할 수 있었습니다.
     retrospective: `이번 프로젝트를 통해 사용자 흐름과 상태 관리의 일관성이 UX에 큰 영향을 준다는 점을 경험했습니다.
     Swiper 기반 제주 대표 음식 슬라이드와 카테고리별 관광 정보 탐색 등 기능을 구현하며, MSW를 활용한
     API 구조 설계에 한층 더 가까워질수 있었습니다.`,
+  },
+
+  {
+    text: "Anne Exhibition",
+    person: "1명(개인 프로젝트)",
+    date: "2026.03 ~ 진행중",
+    rate: "100%",
+    purpose:
+      "서울숲에서 개최된 빨강머리앤 전시회를 찾는 관림객들이 전시 관련한 간단한 정보와 위치, 프로그램등의 정보를 얻을 수 있도록 돕는 웹 서비스를 기획했습니다. ",
+    info: `전시의 메인 테마와 각 챕터별 전시작품들, 그리고 전시장 위치 정보를 직관적으로 탐색할 수 있도록 구성했습니다. 
+    
+    데이터 관리 측면에서는 Supabase를 연동하여 실제 서비스와 동일한 데이터 흐름을 구축하도록 했으며, Vercel을 통해 최적화된 배포 환경을 마련하여 사용자에게 빠르고 안정적인 웹 전시환경을 제공합니다.`,
+
+    function: [
+      "React State를 활용한 동적 UI제어",
+      "Supabase 기반의 실시간 데이터 관리",
+      "Supabase 클라이언트를 활용해 실제 데이터베이스와 통신하는 API 환경 구축",
+      "확장성을 고려한 컴포넌트 기반의 전시 콘텐츠 렌더링",
+    ],
+    flow: ["메인 화면 진입", "전시회 미리보기", "프로그램", "추가 탐색"],
+    step: [
+      {
+        title: "STEP 01. 메인 페이지",
+        src: projectPopup7,
+        info: "메인 화면에서는 전시소개와 순서, 프로그램과 일러스트작품모음전을 간단하게 확인할 수 있습니다.",
+      },
+
+      {
+        title: "STEP 02. Exhibition",
+        src: projectPopup8,
+        info: "챕터별 전시회내용과 다양한 작품들을 한눈에 확인할 수 있습니다.",
+      },
+
+      {
+        title: "STEP 03. Program",
+        src: projectPopup9,
+        info: "전시회에서 열리는 프로그램들을 소개하면서 각 프로그램의 상세 정보나 대표 이미지들을 보여주면서 빨강머리앤 전시회 관련 콘텐츠를 탐색할 수 있습니다.",
+      },
+    ],
+    technology: [
+      {
+        title: "스타일 관리",
+        info: "SCSS를 활용하여 전시회 대표 컬러와 폰트 스타일을 공통화하고, 스타일 코드 중복 최소화",
+      },
+      {
+        title: "상태 관리",
+        info: "useState를 활용한 전시 챕터별 탭 상태와 데이터들을 컴포넌트 단위로 관리",
+      },
+      {
+        title: "API 관리",
+        info: "Supabase 기반 실시간 데이터 연동으로 작품 정보 등 프로그램 데이터를 호출하는 API 환경을 구성",
+      },
+
+      {
+        title: "배포 관리",
+        info: "Vercel을 활용해 자동 배포 파이프라인을 구축하고, Supbase API Key 정보를 환경 변수로 관리",
+      },
+    ],
+
+    retrospective: `이번 프로젝트를 통해 실제 데이터베이스(Supabase) 연동과 배포 환경(Vercel) 구축을 경험하며, 
+    백엔드와 프론트엔드 간의 데이터 흐름을 깊이 있게 이해할 수 있었습니다.
+    
+    특히 SCSS의 변수를 활용해 전시회의 디자인 시스템을 구조화하여 코드의 재사용성을 높였고, 사용자 경험에 
+    영향을 주는 요소들을 체득할 수 있었습니다. 단순히 UI 구현을 넘어, 실제 API 호출 환경을 구성하고 최적화된
+     배포 과정을 거치며 한층 더 견고한 웹서비스를 설계하는 역량을 기를 수 있는 소중한 기회였습니다.`,
   },
 ];
