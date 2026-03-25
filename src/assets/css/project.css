@@ -199,11 +199,6 @@
 }
 
 @media (min-width: 1600px) {
-  .project-title__wrap {
-    margin-bottom: 100px;
-    padding-top: 100px;
-  }
-
   .project-con__wrap {
     max-width: 1300px;
     width: 100%;

@@ -279,11 +279,6 @@
 }
 
 @media (min-width: 1600px) {
-  .design-title__wrap {
-    padding-top: 100px;
-    margin-bottom: 100px;
-  }
-
   .design-container {
     width: 100%;
     max-width: 1300px;
@@ -291,13 +286,5 @@
 
   .design-item {
     font-size: 25px;
-  }
-
-  .design-title__wrap {
-    margin-bottom: 100px;
-  }
-
-  .design-container {
-    width: 1300px;
   }
 }

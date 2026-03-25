@@ -7,9 +7,10 @@ export const skillsContent = [
         { name: "CSS3", className: "skill-language-css" },
         { name: "JavaScript", className: "skill-language-js" },
         { name: "TypeScript", className: "skill-language-ts" },
+        { name: "SCSS", className: "skill-language-scss" },
       ],
       description:
-        "웹 표준과 접근성을 고려한 마크업을 기반으로 UI를 구현하며, JavaScript와 TypeScript를 활용해 동적인 화면과 로직을 개발합니다.",
+        "웹 표준과 접근성을 고려한 마크업을 기반으로 UI를 구현하며, JavaScript와 TypeScript를 활용해 동적인 화면과 로직을 개발합니다. 또한 SCSS의 변수와 믹스인을 활용해 유지보수가 용이하고 구조적인 시스템을 설계합니다.",
     },
   },
 
@@ -29,9 +30,12 @@ export const skillsContent = [
 
   {
     Database: {
-      list: [{ name: "MySQL", className: "skill-database-mysql" }],
+      list: [
+        { name: "MySQL", className: "skill-database-mysql" },
+        { name: "Supabase", className: "skill-database-supabase" },
+      ],
       description:
-        "데이터 구조를 이해하고 API 연동을 통해 프론트엔드에서 효울적으로 데이터를 활용합니다. 데이터의 형태와 흐름을 고려해 화면에 적합한 구조로 가공하고, 안정적인 데이터 처리와 화면 렌더링을 구현합니다.",
+        "MySQL과 Supabase를 활용해 관계형 데이터 구조를 설계하고, REST API 연동을 통해 프론트에서 데이터를 효율적으로 관리합니다. 원본 데이터를 화면 구성에 맞게 가공하여 안정적인 렌더링을 구현하며 Supabase의 실시간 데이터 처리와 인증 기능을 프로젝트에 최적화하여 구현했습니다.",
     },
   },
 
@@ -44,9 +48,11 @@ export const skillsContent = [
         { name: "Sourcetree", className: "skill-etc-sourcetree" },
         { name: "Notion", className: "skill-etc-notion" },
         { name: "Netlify", className: "skill-etc-netlify" },
+        { name: "Vercel", className: "skill-etc-vercel" },
+        { name: "MSW", className: "skill-etc-msw" },
       ],
       description:
-        "Git과 GitHub를 활용해 버전 관리를 진행하며, 협업 환경에서의 브랜치 코드 공유 경험이 있습니다. Netlify와 Render를 활용해 지속적 배포(CD) 환경을 구축해 본 경험이 있으며 Notion을 사용해 작업 정리와 커뮤니케이션을 진행합니다.",
+        "GitHub를 활용해 프로젝트 버전 관리를 진행하며, 협업 환경에서의 브랜치 코드를 공유한 경험이 있습니다. Netlify와 Render를 활용해 지속적 배포(CD) 환경을 구축해 본 경험이 있으며 Notion을 사용해 작업을 정리합니다.",
     },
   },
   {

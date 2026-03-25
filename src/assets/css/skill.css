@@ -27,13 +27,13 @@
 }
 
 .skill-item {
-  width: 150px;
+  width: 170px;
   text-align: center;
   cursor: pointer;
 }
 
 .skill-bar {
-  width: 150px;
+  width: 170px;
   height: 8px;
   background-color: black;
   margin-top: 10px;
@@ -45,22 +45,21 @@
 }
 
 .skill-content {
-  width: 740px;
+  width: 800px;
   display: flex;
   flex-wrap: wrap;
-  gap: 70px;
+  gap: 50px;
   max-width: 100%;
 }
 
 .skill-box__wrap {
-  width: 91px;
   text-align: center;
 }
 
 .skill-box {
-  width: 91px;
-  height: 91px;
-  border: 1px solid #595959;
+  width: 90px;
+  height: 90px;
+  border: 1px solid #418c8e;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -96,6 +95,10 @@
   background-image: url("../img/skill/lanuage/language4.png");
 }
 
+.skill-language-scss {
+  background-image: url("../img/skill/lanuage/language5.png");
+}
+
 .skill-frontend-react {
   background-image: url("../img/skill/frontend/frontend1.png");
 }
@@ -123,11 +126,15 @@
   background-image: url("../img/skill/database/database1.png");
 }
 
-.skill-database-mongodb {
+.skill-database-supabase {
+  background-image: url("../img/skill/database/database3.png");
+}
+
+/* .skill-database-mongodb {
   width: 65px;
   height: 65px;
   background-image: url("../img/skill/database/database2.png");
-}
+} */
 
 /* .skill-etc-git {
   background-image: url("../img/skill/etc/etc1.png");
@@ -154,8 +161,15 @@
 }
 
 .skill-etc-netlify {
-  height: 50px;
   background-image: url("../img/skill/etc/etc6.png");
+}
+
+.skill-etc-vercel {
+  background-image: url("../img/skill/etc/etc7.png");
+}
+
+.skill-etc-msw {
+  background-image: url("../img/skill/etc/etc8.png");
 }
 
 .skill-design-figma {
@@ -168,11 +182,4 @@
 
 .skill-design-illustrator {
   background-image: url("../img/skill/design/design3.png");
-}
-
-@media (min-width: 1600px) {
-  .skill-title__wrap {
-    margin-bottom: 100px;
-    padding-top: 100px;
-  }
 }
