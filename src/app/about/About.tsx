@@ -1,9 +1,9 @@
-import "../../assets/css/about.css";
-import { data } from "../../data/aboutData";
+import "@/assets/css/about.css";
+import { data } from "@/data/aboutData";
 
-const About = ({ aboutRef }: any) => {
+const About = () => {
   return (
-    <div ref={aboutRef} className="about">
+    <div id="about" className="about">
       <div className="aout-title__wrap">
         <div className="about-title">ABOUT</div>
       </div>

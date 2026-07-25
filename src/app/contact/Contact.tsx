@@ -1,8 +1,8 @@
 import "../../assets/css/contact.css";
 
-const Contact = ({ contactRef }: any) => {
+const Contact = () => {
   return (
-    <div className="contact" ref={contactRef}>
+    <div id="contact" className="contact">
       <div className="contact-title__wrap">
         <div className="contact-title">Contact</div>
         <div className="top-icon"></div>

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import "../../assets/css/projectPopup.css";
-import { projectPopupData } from "../../data/projectPopupData";
+import "@/assets/css/projectPopup.css";
+import { projectPopupData } from "@/data/projectPopupData";
 
 interface ProjectPopupProps {
   onClose: () => void;
@@ -38,7 +38,7 @@ const ProjectPopup = ({ selectText, onClose }: ProjectPopupProps) => {
               <p>참여인원</p>
               <p>{selectData?.person}</p>
             </div>
-            <div className="projecetPopup-hero">
+            <div className="projecetPopup-hero add">
               <p>기간</p>
               <p>{selectData?.date}</p>
             </div>
@@ -90,6 +90,19 @@ const ProjectPopup = ({ selectText, onClose }: ProjectPopupProps) => {
               <div key={index} className="projectPopup-technology__info">
                 <div className="projectPopup-technology__t">{itme.title}</div>
                 <p>{itme.info}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="projecetPopup-refactoring-wrap">
+            <div className="projecetPopup-refactoring-title">
+              리팩토링 및 트러블슈팅
+            </div>
+
+            {selectData?.refactoring?.map((item, index) => (
+              <div key={index} className="projecetPopup-refactoring-info">
+                <div className="projecetPopup-refactoring-t">{item.title}</div>
+                <p>{item.info}</p>
               </div>
             ))}
           </div>

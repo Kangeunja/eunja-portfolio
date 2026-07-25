@@ -1,9 +1,9 @@
 import { useState } from "react";
-import "../../assets/css/project.css";
-import { projectData } from "../../data/projectData";
+import "@/assets/css/project.css";
+import { projectData } from "@/data/projectData";
 import ProjectPopup from "./ProjectPopup";
 
-const Projects = ({ projectRef }: any) => {
+const Projects = () => {
   // 상세 내용 클릭 시 팝업에 전달할 text
   const [selectText, setSelectText] = useState<any>(null);
 
@@ -12,7 +12,7 @@ const Projects = ({ projectRef }: any) => {
 
   return (
     <>
-      <div className="project" ref={projectRef}>
+      <div id="project" className="project">
         <div className="project-title__wrap">
           <div className="project-title">Project</div>
           <div className="project-tab">
@@ -36,8 +36,8 @@ const Projects = ({ projectRef }: any) => {
             }}
           >
             {projectData.map((item, index) => (
-              <>
-                <div className="project-left__con" key={index}>
+              <div className="project-card-item" key={index}>
+                <div className="project-left__con">
                   <img src={item.src} alt="" />
                   {item.text === "Jeju Travel Portal" && (
                     <>
@@ -90,7 +90,18 @@ const Projects = ({ projectRef }: any) => {
                     </div>
                   </div>
                 </div>
-              </>
+
+                {item.overlay && (
+                  <div className="renovation-overlay">
+                    <p>🛠️ 리뉴얼 진행 중</p>
+                    <span>
+                      사용자 경험 개선 및 반응형 레이아웃 전면 개편을 위해
+                      <br />
+                      현재 코드 리팩토링 및 리뉴얼 작업을 진행 중입니다.
+                    </span>
+                  </div>
+                )}
+              </div>
             ))}
           </div>
         </div>
