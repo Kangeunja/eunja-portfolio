@@ -103,11 +103,12 @@
 }
 
 .project-right__con {
+  width: 600px;
   padding-top: 50px;
 }
 
 .project-text {
-  font-size: 28px;
+  font-size: 30px;
   margin-bottom: 5px;
   font-family: "Raleway", sans-serif;
 }
@@ -206,6 +207,7 @@
 .project-card-item {
   position: relative;
   display: flex;
+  overflow: hidden;
 }
 
 .renovation-overlay {
@@ -228,5 +230,31 @@
   .project-con__wrap {
     max-width: 1300px;
     width: 100%;
+  }
+
+  .project-left__con {
+    width: 700px;
+    height: 500px;
+  }
+
+  .project-date {
+    font-size: 15px;
+  }
+
+  .project-right__con {
+    width: 600px;
+    padding-top: 60px;
+  }
+
+  .project-info {
+    width: 550px;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .project-left__screen {
+    width: 450px;
+    height: 260px;
+    left: 125px;
   }
 }

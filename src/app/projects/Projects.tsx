@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "@/assets/css/project.css";
 import { projectData } from "@/data/projectData";
 import ProjectPopup from "./ProjectPopup";
@@ -9,6 +9,23 @@ const Projects = () => {
 
   // 현재 보여지고 있는 tab
   const [currentTab, setCurrentTab] = useState(0);
+  const [tabWidth, setTabWidth] = useState(1200);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1920) {
+        setTabWidth(1300);
+      } else {
+        setTabWidth(1200);
+      }
+    };
+
+    // 최초 실행 및 리사이즈 이벤트 등록
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <>
@@ -32,7 +49,7 @@ const Projects = () => {
           <div
             className="project-slider"
             style={{
-              transform: `translateX(-${currentTab * 1200}px)`,
+              transform: `translateX(-${currentTab * tabWidth}px)`,
             }}
           >
             {projectData.map((item, index) => (
