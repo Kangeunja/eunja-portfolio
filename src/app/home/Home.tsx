@@ -1,11 +1,13 @@
-import { useEffect, useRef, useState } from "react";
-import TopMenu from "../../components/layout/TopMenu";
-import "../../assets/css/home.css";
+import { useEffect, useState } from "react";
+
+import TopMenu from "@/components/layout/TopMenu";
 import About from "../about/About";
 import Skill from "../skill/Skill";
 import Design from "../design/Design";
 import Projects from "../projects/Projects";
 import Contact from "../contact/Contact";
+
+import "@/assets/css/home.css";
 
 // 타이핑 애니메이션에 사용할 문장들
 const texts = [
@@ -13,18 +15,10 @@ const texts = [
   "사용자 경험까지 놓치지 않는",
 ];
 
-// 최종적으로 항상 표시되는 텍스트
+// 항상 표시되는 텍스트
 const finalText = "프론트엔드 개발자 강은자입니다.";
 
 const Home = () => {
-  // 스크롤 이동 시 각 섹션 위치 참조용
-  const homeRef = useRef<HTMLDivElement | null>(null);
-  const aboutRef = useRef<HTMLDivElement | null>(null);
-  const skillsRef = useRef<HTMLDivElement | null>(null);
-  const projectRef = useRef<HTMLDivElement | null>(null);
-  const designRef = useRef<HTMLDivElement | null>(null);
-  const contactRef = useRef<HTMLDivElement | null>(null);
-
   // 스크롤시 헤더 배경색 변경상태
   const [scrolled, setScrolled] = useState(false);
 
@@ -35,43 +29,43 @@ const Home = () => {
   const [isDeleting, setIsDeleting] = useState(false); // 삭제 중인지 여부
 
   // 메뉴 클릭 시 해당 섹션으로 부드럽게 스크롤 이동
-  const scrollTo = (ref: React.RefObject<HTMLDivElement | null>) => {
-    ref.current?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
   // 글자 하나씩 추가/삭제 효과
   useEffect(() => {
     const current = texts[textIndex];
-    const speed = isDeleting ? 40 : 70;
+    let timeout: number;
 
-    const timeout = setTimeout(() => {
-      if (!isDeleting) {
-        // 글자 추가
-        setDisplayText(current.substring(0, charIndex + 1));
-        setCharIndex((prev) => prev + 1);
-
-        // 문장 끝에 도달하면 1초 후 삭제
-        if (charIndex + 1 === current.length) {
-          setTimeout(() => setIsDeleting(true), 1000);
-        }
+    if (!isDeleting) {
+      // 글자 추가
+      if (charIndex <= current.length) {
+        timeout = setTimeout(() => {
+          setDisplayText(current.substring(0, charIndex));
+          setCharIndex((prev) => prev + 1);
+        }, 70);
       } else {
-        // 글다 삭제
-        setDisplayText(current.substring(0, charIndex - 1));
-        setCharIndex((prev) => prev - 1);
-
-        // 문장 다 삭제하면 다음 문장으로 이동
-        if (charIndex === 0) {
-          setIsDeleting(false);
-          setTextIndex((prev) => (prev + 1) % texts.length);
-        }
+        timeout = setTimeout(() => {
+          setIsDeleting(true);
+        }, 1000);
       }
-    }, speed);
+    } else {
+      // 글자 삭제
+      if (charIndex >= 0) {
+        timeout = setTimeout(() => {
+          setDisplayText(current.substring(0, charIndex));
+          setCharIndex((prev) => prev - 1);
+        }, 40);
+      } else {
+        setIsDeleting(false);
+        setTextIndex((prev) => (prev + 1) % texts.length);
+        setCharIndex(0);
+      }
+    }
 
     return () => clearTimeout(timeout);
-  }, [charIndex, isDeleting, textIndex, texts]);
+  }, [charIndex, isDeleting, textIndex]);
 
   // 페이지 스크롤 시 헤더 배경색 변경
   useEffect(() => {
@@ -88,14 +82,15 @@ const Home = () => {
     <>
       <TopMenu
         scrolled={scrolled}
-        onHome={() => scrollTo(homeRef)}
-        onAbout={() => scrollTo(aboutRef)}
-        onSkills={() => scrollTo(skillsRef)}
-        onProject={() => scrollTo(projectRef)}
-        onDesign={() => scrollTo(designRef)}
-        onContact={() => scrollTo(contactRef)}
+        onHome={() => scrollToSection("home")}
+        onAbout={() => scrollToSection("about")}
+        onSkills={() => scrollToSection("skills")}
+        onProject={() => scrollToSection("project")}
+        onDesign={() => scrollToSection("design")}
+        onContact={() => scrollToSection("contact")}
       />
-      <div className="main-img" ref={homeRef}>
+
+      <div id="home" className="main-img">
         <div className="main-text">
           {displayText}
           <span className="cursor">|</span>
@@ -108,18 +103,18 @@ const Home = () => {
           </div>
           <button
             className="main-scroll__text"
-            onClick={() => scrollTo(aboutRef)}
+            onClick={() => scrollToSection("about")}
           >
             더 알아보기
           </button>
         </div>
       </div>
 
-      <About aboutRef={aboutRef} />
-      <Skill skillsRef={skillsRef} />
-      <Projects projectRef={projectRef} />
-      <Design designRef={designRef} />
-      <Contact contactRef={contactRef} />
+      <About />
+      <Skill />
+      <Projects />
+      <Design />
+      <Contact />
     </>
   );
 };

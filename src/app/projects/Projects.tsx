@@ -1,18 +1,35 @@
-import { useState } from "react";
-import "../../assets/css/project.css";
-import { projectData } from "../../data/projectData";
+import { useEffect, useState } from "react";
+import "@/assets/css/project.css";
+import { projectData } from "@/data/projectData";
 import ProjectPopup from "./ProjectPopup";
 
-const Projects = ({ projectRef }: any) => {
+const Projects = () => {
   // 상세 내용 클릭 시 팝업에 전달할 text
   const [selectText, setSelectText] = useState<any>(null);
 
   // 현재 보여지고 있는 tab
   const [currentTab, setCurrentTab] = useState(0);
+  const [tabWidth, setTabWidth] = useState(1200);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1920) {
+        setTabWidth(1300);
+      } else {
+        setTabWidth(1200);
+      }
+    };
+
+    // 최초 실행 및 리사이즈 이벤트 등록
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <>
-      <div className="project" ref={projectRef}>
+      <div id="project" className="project">
         <div className="project-title__wrap">
           <div className="project-title">Project</div>
           <div className="project-tab">
@@ -32,12 +49,12 @@ const Projects = ({ projectRef }: any) => {
           <div
             className="project-slider"
             style={{
-              transform: `translateX(-${currentTab * 1200}px)`,
+              transform: `translateX(-${currentTab * tabWidth}px)`,
             }}
           >
             {projectData.map((item, index) => (
-              <>
-                <div className="project-left__con" key={index}>
+              <div className="project-card-item" key={index}>
+                <div className="project-left__con">
                   <img src={item.src} alt="" />
                   {item.text === "Jeju Travel Portal" && (
                     <>
@@ -90,7 +107,18 @@ const Projects = ({ projectRef }: any) => {
                     </div>
                   </div>
                 </div>
-              </>
+
+                {item.overlay && (
+                  <div className="renovation-overlay">
+                    <p>🛠️ 리뉴얼 진행 중</p>
+                    <span>
+                      사용자 경험 개선 및 반응형 레이아웃 전면 개편을 위해
+                      <br />
+                      현재 코드 리팩토링 및 리뉴얼 작업을 진행 중입니다.
+                    </span>
+                  </div>
+                )}
+              </div>
             ))}
           </div>
         </div>

@@ -11,7 +11,7 @@ import {
 } from "../../data/designData";
 import DesignPopup from "./DesignPopup";
 
-const Design = ({ designRef }: any) => {
+const Design = () => {
   const navigate = useNavigate();
 
   // 현재 선택된 디자인 카테고리 인덱스
@@ -49,7 +49,7 @@ const Design = ({ designRef }: any) => {
   const renderImages = (column: "left" | "right", delayOffset = 0) =>
     current.data
       .filter((_, index) =>
-        column === "left" ? index % 2 === 0 : index % 2 === 1
+        column === "left" ? index % 2 === 0 : index % 2 === 1,
       )
       .map((item, index) => (
         <motion.div
@@ -78,7 +78,7 @@ const Design = ({ designRef }: any) => {
 
   return (
     <>
-      <div className="design" ref={designRef}>
+      <div id="design" className="design">
         <div className="design-title__wrap">
           <div className="design-title">Design</div>
         </div>

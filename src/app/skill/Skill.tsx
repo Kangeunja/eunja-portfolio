@@ -1,8 +1,8 @@
 import { useState } from "react";
-import "../../assets/css/skill.css";
-import { skillsContent } from "../../data/skillData";
+import "@/assets/css/skill.css";
+import { skillsContent } from "@/data/skillData";
 
-const Skill = ({ skillsRef }: any) => {
+const Skill = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
   // 스킬 리스트
@@ -12,7 +12,7 @@ const Skill = ({ skillsRef }: any) => {
   const currentContent = Object.values(skillsContent[activeIndex])[0];
 
   return (
-    <div className="skill" ref={skillsRef}>
+    <div id="skills" className="skill">
       <div className="skill-title__wrap">
         <div className="skill-title">Skill</div>
       </div>
